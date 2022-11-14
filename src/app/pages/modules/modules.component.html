@@ -1,0 +1,11 @@
+<h1>Modules</h1>
+<div class="search-module">
+    <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="&#61442;  Suche nach einem Modul">
+</div>
+<ul class="modules">
+    <li *ngFor="let module of modules | filter:searchText">
+        <button type="button" (click)="onSelect(module.id)">
+            <span class="name">{{module.module}}</span>
+        </button>
+    </li>
+</ul>
