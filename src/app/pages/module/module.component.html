@@ -1,3 +1,9 @@
-<p>module works!</p>
 
-<p> id chosen module {{id}}</p>
+<p > id chosen module {{id}}</p>
+<ul class="PossibleAnswers">
+    <li *ngFor="let pa of possibleAnswers ">
+        <span class="name">{{pa.answer}}</span>
+    </li>
+</ul>
+
+<p > all answers</p>
